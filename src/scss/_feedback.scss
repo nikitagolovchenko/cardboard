@@ -1,0 +1,87 @@
+.feedback {
+    margin-bottom: 65px;
+
+    &__img {
+        padding: 0 15px 0;
+    }
+
+    &__slider {
+        padding: 0 20px;
+    }
+
+    .slick-prev {
+        height: 77px;
+        left: 0;
+        transition: 0.3s linear;
+    
+        &:before { 
+            position: absolute; 
+            content: ""; 
+            left: 10px; 
+            top: 39px; 
+            background: orange; 
+            width: 1px; 
+            height: 25px;
+            transform: skewX(18deg); 
+            transition: 0.3s linear;
+        }
+    
+        &:after  { 
+            position: absolute; 
+            content: ""; 
+            left: 10px; 
+            top: 15px; 
+            background: orange; 
+            width: 1px; 
+            height: 25px;
+            transform: skewX(-18deg); 
+            transition: 0.3s linear;
+        }
+        
+        &:hover {
+            background: orange;
+    
+            &:before, &:after {
+                background: #fff;
+            }
+        }
+    }
+    
+    .slick-next {
+        height: 77px;
+        right: 0;
+        transition: 0.3s linear;
+    
+        &:before { 
+            position: absolute; 
+            content: ""; 
+            left: 10px; 
+            top: 39px; 
+            background: orange; 
+            width: 1px; 
+            height: 25px;
+            transform: skewX(-18deg); 
+            transition: 0.3s linear;
+        }
+    
+        &:after  { 
+            position: absolute; 
+            content: ""; 
+            left: 10px; 
+            top: 15px;  
+            background: orange; 
+            width: 1px; 
+            height: 25px;
+            transform: skewX(18deg); 
+            transition: 0.3s linear;
+        }
+        
+        &:hover {
+            background: orange;
+    
+            &:before, &:after {
+                background: #fff;
+            }
+        }
+    }
+}
